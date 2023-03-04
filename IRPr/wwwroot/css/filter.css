@@ -47,3 +47,15 @@ input[type=number] {
         margin-top: 10px;
     }
 }
+
+.scroller {
+    overflow-y: scroll;
+    height: 800px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+    .scroller::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
+    }

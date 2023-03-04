@@ -8,6 +8,7 @@ namespace IRPr.Repositories
         private ShopContext _shopContext;
         private IProductRepository? _productRepository;
         private IImageRepository? _imageRepository;
+        private ICategoryRepository? _categoryRepository;
 
         public IProductRepository productRepository
         {
@@ -35,6 +36,18 @@ namespace IRPr.Repositories
             }
         }
 
+        public ICategoryRepository CategoryRepository
+        {
+            get
+            {
+                if (_categoryRepository == null)
+                {
+                    _categoryRepository = new CategoryRepository(_shopContext);
+                }
+
+                return _categoryRepository;
+            }
+        }
 
         public RepositoryWrapper(ShopContext shopContext)
         {

@@ -2,6 +2,7 @@
 using IRPr.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 
 namespace IRPr.Controllers
@@ -21,7 +22,10 @@ namespace IRPr.Controllers
 
 		public IActionResult Index()
 		{
-			IEnumerable<Product> products = _productService.GetAllProducts();
+            List<Category> categories = _productService.GetAllCategories();
+            ViewData["Categories"] = categories;
+
+            IEnumerable<Product> products = _productService.GetAllProducts();
 			return View(products);
 		}
 
@@ -32,7 +36,17 @@ namespace IRPr.Controllers
 
 		public IActionResult Create()
 		{
-
+			List<Category> categories = _productService.GetAllCategories();
+            List<SelectListItem> items = categories.ConvertAll(a =>
+            {
+                return new SelectListItem()
+                {
+                    Text = a.Name.ToString(),
+                    Value = a.categoryID.ToString(),
+                    Selected = false
+                };
+            });
+			ViewData["Categories"]= items;
             return View();
         }
 
@@ -40,7 +54,7 @@ namespace IRPr.Controllers
         public IActionResult Create([FromForm] Product product, ICollection<IFormFile> imageFiles)
 		{
 			_productService.AddProduct(product, imageFiles);
-            return RedirectToAction("Feed");
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -17,12 +17,25 @@ namespace IRPr.Services
 
         public void AddProduct(Product product, ICollection<IFormFile> imageFiles)
         {
-            product.CategoryID = 1;
+            foreach (IFormFile imageFile in imageFiles)
+            {
+                string fileName = Path.GetFileNameWithoutExtension(imageFile.FileName);
+                string extension = Path.GetExtension(imageFile.FileName);
+                product.MainPhotoName = fileName = fileName + DateTime.Now.ToString("_yyMMddHHmmss") + extension;
+                break;
+            }
+
             ICollection<Image> images = _imageService.AddImage(imageFiles);
             product.images = images;
 
             _repositoryWrapper.productRepository.Create(product);
             _repositoryWrapper.Save();
+        }
+
+        public dynamic GetAllCategories()
+        {
+            IEnumerable<Category> categories= _repositoryWrapper.CategoryRepository.FindAll().ToList();
+            return categories;
         }
 
         public IEnumerable<Product> GetAllProducts()
