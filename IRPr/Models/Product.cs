@@ -10,6 +10,6 @@ namespace IRPr.Models
 
 		public double Price { get; set; }
 		public ICollection<Image> images { get; set; }
-		public Category category { get; set; }
+		public int CategoryID { get; set; }
 	}
 }

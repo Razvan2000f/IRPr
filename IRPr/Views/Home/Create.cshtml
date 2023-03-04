@@ -1,0 +1,42 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Create a product";
+}
+
+<div class="center-div">
+    <h1 class="text-primary">Post an Announcement!</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group row my-2">
+                    <label asp-for="Name" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input asp-for="Name" type="text" id="name" name="name" class="form-control" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group row my-2">
+                    <label asp-for="Price" class="col-sm-2 col-form-label">Price</label>
+                    <div class="col-sm-10">
+                        <input asp-for="Price" type="number" id="price" name="price" class="form-control" placeholder="Price">
+                    </div>
+                </div>
+
+                <div class="form-group row my-2">
+                    <label class="col-sm-2 col-form-label">Images</label>
+                    <div class="col-sm-10">
+                        <input accept="image/*" name="imageFiles" type="file" class="form-control" id="formFile" multiple>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group row my-2">
+                    <div class="col-sm-12">
+                        <textarea type="text" asp-for="Description" id="description" name="description" class="form-control" placeholder="Description" rows="9"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="bi bi-check-circle"></i> Submit</button>
+    </form>
+</div>
