@@ -57,18 +57,16 @@ input::-webkit-inner-spin-button {
 
 .infocard {
     margin-bottom: 10px;
-    min-height: 120px;
+    min-height: 90px;
     width: 100%;
     display: flex;
     position: relative;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
     overflow: hidden;
 }
 
 .infocard-container {
     width: 200px;
-    height: 200px;
+    height: 100px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -82,7 +80,7 @@ input::-webkit-inner-spin-button {
 
 .infocard-body {
     padding: 5px;
-    height: 200px;
+    height: 100px;
     position: relative;
 }
 
