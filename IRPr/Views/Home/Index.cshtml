@@ -1,34 +1,16 @@
-﻿
-
+﻿@model IEnumerable<Product>
 
 <head>
-	<link rel="stylesheet" href="~/css/filter.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/filter.css" asp-append-version="true" />
 </head>
 
 <div class="d-flex justify-content-center center-div flex-wrap border-0 p-0">
-	<form class="col-md-2 filter-div bg-light">
-		<img src="@Url.Content("~/images/Capture.png")" class="infocard-img" alt="">
-		<h6>Canapea extensibila Intex, 66552NP, 203x224x66 cm</h6>
-		<h4>Price: 200</h4>
-	</form>
-	<form class="col-md-2 filter-div bg-light">
-		<img src="@Url.Content("~/images/Capture.png")" class="infocard-img" alt="">
-		<h6>Canapea extensibila Intex, 66552NP, 203x224x66 cm</h6>
-		<h4>Price: 200</h4>
-	</form>
-	<form class="col-md-2 filter-div bg-light">
-		<img src="@Url.Content("~/images/Capture.png")" class="infocard-img" alt="">
-		<h6>Canapea extensibila Intex, 66552NP, 203x224x66 cm</h6>
-		<h4>Price: 200</h4>
-	</form>
-	<form class="col-md-2 filter-div bg-light">
-		<img src="@Url.Content("~/images/Capture.png")" class="infocard-img" alt="">
-		<h6>Canapea extensibila Intex, 66552NP, 203x224x66 cm</h6>
-		<h4>Price: 200</h4>
-	</form>
-	<form class="col-md-2 filter-div bg-light">
-		<img src="@Url.Content("~/images/Capture.png")" class="infocard-img" alt="">
-		<h6>Canapea extensibila Intex, 66552NP, 203x224x66 cm</h6>
-		<h4>Price: 200</h4>
-	</form>
+    @foreach (var product in Model)
+    {
+        <form class="col-md-2 filter-div bg-light">
+            <img src="@Url.Content("~/images/Capture.png")" class="infocard-img" alt="">
+            <h6>@Html.DisplayFor(name =>product.Name)</h6>
+            <h4>@Html.DisplayFor(price => product.Price)</h4>
+        </form>
+    }
 </div>

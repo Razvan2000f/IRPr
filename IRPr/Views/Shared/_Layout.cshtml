@@ -26,7 +26,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
-                    <partial name="_LoginPartial"/>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Create">Create a product</a>
+                            }
+                            else
+                            {
+                                <a class="dropdown-item text-black" href="/Identity/Account/Login">Create a product</a>
+                            }
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
