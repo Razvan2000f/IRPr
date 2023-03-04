@@ -1,16 +1,32 @@
 ﻿@model IEnumerable<Product>
 
+@{
+    List<Category> categories = ViewData["Categories"] as List<Category>;
+}
+
 <head>
     <link rel="stylesheet" href="~/css/filter.css" asp-append-version="true" />
 </head>
-
-<div class="d-flex justify-content-center center-div flex-wrap border-0 p-0">
-    @foreach (var product in Model)
+<div class="d-flex justify-content-center center-div flex-wrap border-0 p-0 scroller" >
+    @foreach (var category in categories)
     {
-        <form class="col-md-2 filter-div bg-light">
-            <img src="@Url.Content("~/images/Capture.png")" class="infocard-img" alt="">
-            <h6>@Html.DisplayFor(name =>product.Name)</h6>
-            <h4>@Html.DisplayFor(price => product.Price)</h4>
-        </form>
+        <h6 class="col-md-12 filter-div bg-light"> @category.Name </h6>
+        foreach (var product in Model)
+        {
+            if (product.CategoryID == category.categoryID)
+            {
+                <form class="col-md-2 filter-div bg-light">
+                    <h3>@Html.DisplayFor(name =>product.Name)</h3>
+                    <img src="@Url.Content("~/images/"+product.MainPhotoName)" class="infocard-img" alt="">
+                    <h4>@Html.DisplayFor(price => product.Price)</h4>
+                    <h6>@Html.DisplayFor(price => product.Description)</h6>
+                    <button type="submit" value="submit" name="submit" formmethod="post" class="btn btn-outline-primary justify-content-center flex-wrap">
+                        <i class="bi bi-funnel"></i>
+                        Add to Cart
+                    </button>
+                </form>
+            }
+        }
     }
+
 </div>
