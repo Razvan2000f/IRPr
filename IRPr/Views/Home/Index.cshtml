@@ -6,8 +6,10 @@
 
 <head>
     <link rel="stylesheet" href="~/css/filter.css" asp-append-version="true" />
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </head>
-<div class="d-flex justify-content-center center-div flex-wrap border-0 p-0 scroller" >
+
+<div class="d-flex justify-content-center center-div flex-wrap border-0 p-0 scroller">
     @foreach (var category in categories)
     {
         <h6 class="col-md-12 filter-div bg-light"> @category.Name </h6>
@@ -20,9 +22,10 @@
                     <img src="@Url.Content("~/images/"+product.MainPhotoName)" class="infocard-img" alt="">
                     <h4>@Html.DisplayFor(price => product.Price)</h4>
                     <h6>@Html.DisplayFor(price => product.Description)</h6>
-                    <button type="submit" value="submit" name="submit" formmethod="post" class="btn btn-outline-primary justify-content-center flex-wrap">
-                        <i class="bi bi-funnel"></i>
-                        Add to Cart
+
+                    <button id="addButton" class="btn btn-outline-primary justify-content-center flex-wrap" 
+                    asp-controller="Home" asp-action="AddToCart" asp-route-id=@product.ID>
+                            Add to Cart
                     </button>
                 </form>
             }

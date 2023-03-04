@@ -8,5 +8,11 @@ namespace IRPr.Repositories
         public ProductRepository(ShopContext shopContext) : base(shopContext)
         {
         }
+
+        public Product GetProductById(int id)
+        {
+           List<Product> products= FindByCondition(product => product.ID == id).ToList();
+            return products[0];
+        }
     }
 }

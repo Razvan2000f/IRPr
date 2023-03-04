@@ -1,0 +1,35 @@
+﻿@model List<Product>
+
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+<h1>@ViewData["Title"]</h1>
+
+<head>
+    <link rel="stylesheet" href="~/css/filter.css" asp-append-version="true" />
+</head>
+
+<div class="d-flex justify-content-center center-div flex-wrap border-0 p-0">
+    <div class="col-md-12 result-div">
+        @foreach (var product in Model)
+        {
+            <div class="infocard">
+                <div class="infocard-container col-md-4">
+                    <img src="@Url.Content("~/images/"+product.MainPhotoName)" class="infocard-img" alt="">
+                </div>
+                <div class="infocard-body col-md">
+                    <h4><a asp-controller="Car" asp-action="Details">@product.Name</a></h4>
+                    <p class="nonaccent">@product.Description</p>
+                    <div class="position-absolute bottom-10 end-10">
+                        <div class="price price">@product.Price</div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <a asp-controller="Home" asp-action="Checkout" class="btn btn-outline-danger">
+        Checkout
+    </a>
+
+</div>

@@ -1,9 +1,11 @@
 ﻿using IRPr.Models;
 using IRPr.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace IRPr.Controllers
 {
@@ -20,6 +22,7 @@ namespace IRPr.Controllers
 			_productService = productService;
 		}
 
+		[Authorize]
 		public IActionResult Index()
 		{
             List<Category> categories = _productService.GetAllCategories();
@@ -29,9 +32,38 @@ namespace IRPr.Controllers
 			return View(products);
 		}
 
-		public IActionResult Privacy()
+		public IActionResult AddToCart(int id)
 		{
-			return View();
+			//Product product=_productService.GetProductById(id);
+
+			string userID= User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            List<CartItem> cartItemsForUser = _productService.GetCartItems(userID);
+			CartItem newCartItem = new CartItem()
+			{
+				UserID = userID,
+				ProductID = id,
+				Quantity = 1
+			};
+			_productService.AddCartItem(newCartItem);
+
+            return RedirectToAction("Index");
+		}
+
+		public IActionResult Cart()
+		{
+            string userID = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+			List<Product> products=new List<Product>(); 
+
+            List<CartItem> cartItemsForUser = _productService.GetCartItems(userID);
+			foreach(CartItem cartItem in cartItemsForUser)
+			{
+                Product product = _productService.GetProductById(cartItem.ProductID);
+				products.Add(product);
+			}
+
+            return View(products);
 		}
 
 		public IActionResult Create()
@@ -61,6 +93,14 @@ namespace IRPr.Controllers
 		public IActionResult Error()
 		{
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+		}
+
+		public IActionResult Checkout()
+		{
+            string userID = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            _productService.DeleteShoppingCart(userID);
+
+			return RedirectToAction("Cart");
 		}
 	}
 }
