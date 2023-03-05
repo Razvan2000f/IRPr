@@ -1,0 +1,53 @@
+Specificatii tehnice
+Denumire:	
+Procesor Intel Raptor Lake, Core i9 13900K 3.0GHz box
+Cod producator:	
+BX8071513900K
+Garantie comerciala:	
+36 luni
+Garantie de conformitate:	24 luni
+General
+Recomandat pentru Gaming	
+Da
+Socket	
+1700
+Serie	
+Core i9 13th gen
+Nucleu	
+Raptor Lake
+Numar nuclee	
+24
+Numar thread-uri	
+32
+Frecventa	
+3 GHz
+Frecventa turbo pana la	
+5,8 GHz
+Cache level 2	
+32 MB
+Tehnologie de fabricatie	
+10 nm
+Putere totala disipata	
+125 W
+Deblocat	
+Da
+Altele	
+Procesoarele din seria Intel® Core™ generatia 13 sunt compatibile doar cu placile de baza cu chipset B660, B760, H610, H670, H770, Z690, Z790 (In anumite cazuri este necesar update de BIOS. Verificati pagina producatorului placii de baza pentru mai multe informatii).
+Grafica Integrata
+Model	
+UHD 770
+Frecventa grafica	
+300 MHz
+Frecventa grafica dinamica	
+1.6 GHz
+Suport Memorie
+Tip	
+DDR4
+DDR5
+Memorie maxima	
+128 GB
+Frecventa	
+DDR4 3200 MHz
+DDR5 5600 MHz
+Suport	
+Dual Channel

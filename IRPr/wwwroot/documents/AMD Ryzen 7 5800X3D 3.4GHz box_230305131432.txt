@@ -1,0 +1,50 @@
+Specificatii tehnice
+Denumire	
+Procesor AMD Ryzen 7 5800X3D 3.4GHz box
+Cod producator	
+100-100000651WOF
+Garantie comerciala	
+36 luni
+Garantie de conformitate	24 luni
+General
+Recomandat pentru Gaming	
+Da
+Socket	
+AM4
+Serie	
+Ryzen 7 5000 Series
+Nucleu	
+Vermeer
+Numar nuclee	
+8
+Numar thread-uri	
+16
+Frecventa	
+3,4 GHz
+Frecventa turbo pana la	
+4,5 GHz
+Cache level 1	
+512 KB
+Cache level 2	
+4 MB
+Cache level 3	
+96 MB
+Tehnologie de fabricatie	
+7 nm
+Putere totala disipata	
+105 W
+Altele	
+Procesoarele din seria Ryzen 5000 sunt compatibile doar cu placile de baza cu chipset A520B450B550X470X570 (In anumite cazuri este necesar update de BIOS. Verificati pagina producatorului placii de baza pentru mai multe informatii).
+Placile de baza cu chipset B450X470 necesita update de BIOS (Disponibilitatea acestuia depinde de producatorul placii de baza. Verificati pagina producatorului placii de baza pentru mai multe informatii) 
+Suport Memorie
+Tip	
+DDR4
+Memorie maxima	
+128 GB
+Frecventa	
+3200 MHz
+Suport	
+Dual Channel
+Suport Expansiune
+Revizie PCI Express	
+4.0

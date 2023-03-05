@@ -1,0 +1,33 @@
+Specificatii tehnice
+Denumire:	
+Memorie Kingston FURY Beast RGB 16GB DDR4 3200MHz CL16 Dual Channel Kit
+Cod producator:	
+KF432C16BBAK2/16
+Garantie comerciala:	
+99 luni
+Garantie de conformitate:	24 luni
+General
+Recomandat pentru Gaming	
+Da
+Serie	
+FURY Beast RGB
+Tip	
+DDR4
+Capacitate	
+16 GB
+Frecventa	
+3200 MHz
+Kit Dual Channel	
+2x 8 GB
+Latenta CAS	
+16 CL
+Radiator	
+FURY Beast RGB
+Standard	
+PC4-25600
+Tensiune alimentare	
+1.35 V
+Timing	
+16-18-18
+Iluminare LED	
+Da, LED RGB

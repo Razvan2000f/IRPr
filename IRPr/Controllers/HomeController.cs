@@ -83,9 +83,9 @@ namespace IRPr.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromForm] Product product, ICollection<IFormFile> imageFiles)
+        public IActionResult Create([FromForm] Product product, ICollection<IFormFile> imageFiles, IFormFile docuFile)
 		{
-			_productService.AddProduct(product, imageFiles);
+			_productService.AddProduct(product, imageFiles, docuFile);
             return RedirectToAction("Index");
         }
 
@@ -102,5 +102,13 @@ namespace IRPr.Controllers
 
 			return RedirectToAction("Cart");
 		}
-	}
+
+        public FileResult Download(int id)
+        {
+            Product product = _productService.GetProductById(id);
+
+            byte[] fileBytes = System.IO.File.ReadAllBytes(@"wwwroot/documents/"+product.DocumentName);
+            return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, product.DocumentName);
+        }
+    }
 }

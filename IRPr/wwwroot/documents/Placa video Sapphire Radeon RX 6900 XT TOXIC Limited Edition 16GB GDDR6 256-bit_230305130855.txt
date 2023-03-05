@@ -1,0 +1,109 @@
+Specificatii tehnice
+Denumire:	
+Placa video Sapphire Radeon RX 6900 XT TOXIC Limited Edition 16GB GDDR6 256-bit
+Cod producator:	
+11308-06-20G
+Garantie comerciala:	
+24 luni
+Garantie de conformitate:	24 luni
+General
+Interfata	
+PCI Express x16 4.0
+Rezolutie maxima	
+7680x4320 pixeli
+Model
+Model	
+Radeon RX 6900 XT
+Editie/Racire	
+TOXIC
+Recomandat pentru gaming	
+Da
+Chipset
+Producator chipset	
+AMD
+Seria	
+Radeon RX 6000
+Tehnologie de fabricatie	
+7 nm
+Procesor grafic	
+Navi 21
+GPU Boost clock	
+2365 MHz
+Data lansarii chipset	
+08.12.2020
+Shader Model	
+6.5
+Texture Units	
+320
+Raster Operators	
+128
+Numar de tranzistoare	
+26800 milioane
+Stream Processors	
+5120
+Memorie
+Tip memorie	
+GDDR6
+Dimensiune memorie	
+16 GB
+BUS memorie	
+256 bit
+Frecventa memorie efectiva	
+16000 MHz
+Infinity Cache	
+128 MB
+3D API
+Suport DirectX	
+12 Ultimate
+Suport OpenGL	
+4.6
+Suport OpenCL	
+2.0
+Suport Vulkan	
+Da
+Suport FreeSync	
+Da
+VR Ready	
+Da
+Porturi
+HDMI	
+1
+Display port	
+3
+Racire
+Sistem racire	
+Activ
+Dimensiune racire	
+Dual slot
+Tip racire	
+Hibrid
+Altele
+HDCP Ready	
+Da
+Tehnologii	
+AMD RDNA™ 2 Architecture
+DirectX® 12 Ultimate
+Hardware Raytracing
+7nm GPU
+GDDR6 Memory
+PCI® Express 4.0 Support
+AMD FreeSync™ Technology
+DisplayPort™ 1.4 with DSC
+HDMI™ 2.1 VRR
+Video Streaming up to 8K
+Radeon™ VR Ready Premium
+AMD FidelityFX
+Radeon™ Image Sharpening
+Radeon™ Anti-Lag
+Radeon™ Software
+Game Driver Optimizations
+Alimentare separata	
+1x 6-pin PCI-E, 2x 8-pin PCI-E
+Dimensiuni	
+270 x 130 x 45 mm
+Backplate	
+Da
+Iluminare	
+Da
+Altele	
+Radiator 394 x 120 x 52.5mm (including fan)

@@ -1,0 +1,105 @@
+Specificatii tehnice
+Denumire:	
+Placa video MSI GeForce RTX 3070 Ti GAMING X TRIO LHR 8GB GDDR6X 256-bit
+Cod producator:	
+RTX 3070 Ti GAMING X TRIO 8G
+Garantie comerciala:	
+36 luni
+Garantie de conformitate:	24 luni
+General
+Interfata	
+PCI Express x16 4.0
+Rezolutie maxima	
+7680x4320 pixeli
+Model
+Model	
+GeForce RTX 3070 Ti
+Editie/Racire	
+GAMING X TRIO
+Recomandat pentru gaming	
+Da
+Chipset
+Producator chipset	
+NVIDIA
+Seria	
+GeForce RTX 3000
+Tehnologie de fabricatie	
+8 nm
+Procesor grafic	
+Ampere GA104
+GPU Boost clock	
+1830 MHz
+Data lansarii chipset	
+10.06.2021
+Shader Model	
+6.5
+Texture Units	
+192
+Raster Operators	
+96
+Numar de tranzistoare	
+17400 milioane
+CUDA Cores	
+6144
+Memorie
+Tip memorie	
+GDDR6X
+Dimensiune memorie	
+8 GB
+BUS memorie	
+256 bit
+Frecventa memorie efectiva	
+19000 MHz
+3D API
+Suport DirectX	
+12 Ultimate
+Suport OpenGL	
+4.6
+Suport OpenCL	
+2.0
+Suport Vulkan	
+Da
+Suport G-Sync	
+Da
+VR Ready	
+Da
+Porturi
+HDMI	
+1
+Display port	
+3
+Suport HDTV	
+Da
+Racire
+Sistem racire	
+Activ
+Dimensiune racire	
+Tri slot
+Tip racire	
+Aer
+Altele
+HDCP Ready	
+Da
+Tehnologii	
+Microsoft DirectX® 12 Ultimate
+NVIDIA DLSS
+PCI Express Gen 4
+NVIDIA® GeForce Experience™
+NVIDIA Ansel
+NVIDIA FreeStyle
+NVIDIA ShadowPlay
+NVIDIA Highlights
+NVIDIA GPU Boost™
+HDMI 2.1
+DisplayPort 1.4a
+2nd Generation RT Cores
+3rd Generation Tensor Cores
+Alimentare separata	
+2x 8-pin PCI-E
+Dimensiuni	
+323 x 140 x 56 mm
+Backplate	
+Da
+Iluminare	
+Da
+Altele
