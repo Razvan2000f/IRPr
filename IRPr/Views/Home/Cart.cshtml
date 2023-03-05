@@ -18,12 +18,12 @@
                 <div class="infocard-container col-md-4">
                     <img src="@Url.Content("~/images/"+product.MainPhotoName)" class="infocard-img" alt="">
                 </div>
-                <div class="infocard-body col-md">
-                    <h4><a asp-controller="Car" asp-action="Details">@product.Name</a></h4>
+                <div class="infocard-body col-md-9">
+                    <h4>@product.Name</h4>
                     <p class="nonaccent">@product.Description</p>
-                    <div class="position-absolute bottom-10 end-10">
-                        <div class="price price">@product.Price</div>
-                    </div>
+                </div>
+                <div class="infocard-body col-md-3">
+                    <div class="price price">@product.Price</div>
                 </div>
             </div>
         }

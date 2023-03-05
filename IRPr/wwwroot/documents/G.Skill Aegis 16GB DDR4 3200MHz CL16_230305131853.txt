@@ -1,0 +1,31 @@
+Specificatii tehnice
+Denumire:	
+Memorie G.Skill Aegis 16GB DDR4 3200MHz CL16 Dual Channel Kit
+Cod producator:	
+F4-3200C16D-16GIS
+Garantie comerciala:	
+99 luni
+Garantie de conformitate:	24 luni
+General
+Recomandat pentru Gaming	
+Da
+Serie	
+Aegis
+Tip	
+DDR4
+Capacitate	
+16 GB
+Frecventa	
+3200 MHz
+Kit Dual Channel	
+2x 8 GB
+Latenta CAS	
+16 CL
+Standard	
+PC4-25600
+Tensiune alimentare	
+1.35 V
+Timing	
+16-18-18-38
+Altele	
+Intel XMP 2.0 (Extreme Memory Profile) Ready

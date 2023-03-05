@@ -1,0 +1,62 @@
+Specificatii tehnice
+Denumire:	
+Sursa Seasonic Focus GX, 80+ Gold, 650W
+Cod producator:	
+FOCUS-GX-650
+Garantie comerciala:	
+120 luni
+Garantie de conformitate:	24 luni
+General
+Recomandat pentru Gaming	
+Da
+Tip	
+ATX
+Putere	
+650 W
+Numar ventilatoare	
+1x 120 mm
+Voltaj/Amperaj	
+100-240Vac
+PFC	
+Active
+Eficienta	
+90 %
+Certificare	
+80+ Gold
+Dimensiuni	
+150 x 140 x 86 mm
+Modulara	
+Da, Full Modulara
+Protectii	
+OPP, OVP, UVP, SCP, OCP, OTP
+Platforma OEM	
+Seasonic
+Voltaje/Amperaje
+Rail +12V	
+1
++3.3V	
+20 A
++5V	
+20 A
++12V 1	
+54 A
+-12V	
+0.3 A
++5Vsb	
+3 A
+Conectori
+20+4 Pin ATX	
+1
+4+4 Pin ATX/EPS	
+2
+6+2 PCI-E	
+4
+SATA	
+10
+Molex	
+3
+Asamblare
+Permite Asamblare	
+Premium, Gold
+Permite Wire Management	
+Da

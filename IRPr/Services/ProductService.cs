@@ -1,6 +1,7 @@
 ﻿using IRPr.Models;
 using IRPr.Repositories.Interfaces;
 using IRPr.Services.Interfaces;
+using Microsoft.AspNetCore.Hosting;
 
 namespace IRPr.Services
 {
@@ -8,14 +9,16 @@ namespace IRPr.Services
     {
         private IRepositoryWrapper _repositoryWrapper;
         private IImageService _imageService;
+        private IWebHostEnvironment _webHostEnvironment;
 
-        public ProductService(IRepositoryWrapper repositoryWrapper, IImageService imageService)
+        public ProductService(IRepositoryWrapper repositoryWrapper, IImageService imageService, IWebHostEnvironment webHostEnvironment)
         {
             _repositoryWrapper = repositoryWrapper;
             _imageService = imageService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
-        public void AddProduct(Product product, ICollection<IFormFile> imageFiles)
+        public void AddProduct(Product product, ICollection<IFormFile> imageFiles, IFormFile docuFile)
         {
             foreach (IFormFile imageFile in imageFiles)
             {
@@ -24,9 +27,19 @@ namespace IRPr.Services
                 product.MainPhotoName = fileName = fileName + DateTime.Now.ToString("_yyMMddHHmmss") + extension;
                 break;
             }
-
             ICollection<Image> images = _imageService.AddImage(imageFiles);
             product.images = images;
+
+            string wwwRootPath = _webHostEnvironment.WebRootPath;
+
+            string docuName = Path.GetFileNameWithoutExtension(docuFile.FileName);
+            string docuExtension = Path.GetExtension(docuFile.FileName);
+            product.DocumentName = docuName = docuName + DateTime.Now.ToString("_yyMMddHHmmss") + docuExtension;
+            string path = Path.Combine(wwwRootPath + "/documents", docuName);
+            using (var fileStream = new FileStream(path, FileMode.Create))
+            {
+                docuFile.CopyTo(fileStream);
+            }
 
             _repositoryWrapper.productRepository.Create(product);
             _repositoryWrapper.Save();

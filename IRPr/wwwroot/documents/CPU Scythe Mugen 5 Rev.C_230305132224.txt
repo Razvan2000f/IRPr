@@ -1,0 +1,80 @@
+Specificatii tehnice
+Denumire:	
+Cooler CPU Scythe Mugen 5 Rev.C
+Cod producator:	
+SCMG-5200
+Garantie comerciala:	
+24 luni
+Garantie de conformitate:	24 luni
+Compatibilitate Socket
+Intel LGA 775	
+Da
+Intel LGA 1150	
+Da
+Intel LGA 1151	
+Da
+Intel LGA 1155	
+Da
+Intel LGA 1156	
+Da
+Intel LGA 1200	
+Da
+Intel LGA 2011	
+Da
+Intel LGA 2011-3	
+Da
+Intel LGA 2066	
+Da
+Intel LGA 1700	
+Da
+AMD AM2	
+Da
+AMD AM2+	
+Da
+AMD AM3	
+Da
+AMD AM3+	
+Da
+AMD AM4	
+Da
+AMD AM5	
+Da
+AMD FM1	
+Da
+AMD FM2	
+Da
+AMD FM2+	
+Da
+General
+Tip racire	
+Aer
+Racire	
+Activ
+Bearing ventilator	
+Fluid Dynamic Bearing
+Numar heatpipe-uri	
+6
+Dimensiune heatpipe	
+6 mm
+Inaltime	
+154.5 mm
+Numar ventilatoare	
+1
+Dimensiune ventilator	
+120 mm
+PWM ventilator	
+Da
+Viteza de rotatie ventilator	
+300 - 1500 RPM
+Flux aer	
+16.9 - 67.62 CFM
+Nivel zgomot ventilator	
+4 - 28.6 dBA
+Presiune aer	
+1.50 mmH2O
+Conector ventilator	
+4 pin
+Greutate	
+900 g
+Dimensiuni generale	
+136 x 154.5 x 110 mm

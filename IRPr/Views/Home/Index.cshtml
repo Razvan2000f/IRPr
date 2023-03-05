@@ -17,15 +17,20 @@
         {
             if (product.CategoryID == category.categoryID)
             {
-                <form class="col-md-2 filter-div bg-light">
-                    <h3>@Html.DisplayFor(name =>product.Name)</h3>
+                <form class="col-md-3 filter-div bg-light">
+                    <h5>@Html.DisplayFor(name =>product.Name)</h5>
                     <img src="@Url.Content("~/images/"+product.MainPhotoName)" class="infocard-img" alt="">
-                    <h4>@Html.DisplayFor(price => product.Price)</h4>
-                    <h6>@Html.DisplayFor(price => product.Description)</h6>
+                    <h6>@Html.DisplayFor(price => product.Price)</h6>
+                    <h9>@Html.DisplayFor(price => product.Description)</h9>
+                    <br/>
+                    <button id="addButton" class="btn btn-outline-primary justify-content-center flex-wrap"
+                         asp-controller="Home" asp-action="Download" asp-route-id=@product.ID>
+                        Download
+                    </button>
 
-                    <button id="addButton" class="btn btn-outline-primary justify-content-center flex-wrap" 
-                    asp-controller="Home" asp-action="AddToCart" asp-route-id=@product.ID>
-                            Add to Cart
+                    <button id="addButton" class="btn btn-outline-primary justify-content-center flex-wrap"
+                         asp-controller="Home" asp-action="AddToCart" asp-route-id=@product.ID>
+                        Add to Cart
                     </button>
                 </form>
             }

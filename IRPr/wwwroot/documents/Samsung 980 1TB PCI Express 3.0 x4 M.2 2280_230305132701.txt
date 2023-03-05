@@ -1,0 +1,58 @@
+Specificatii tehnice
+Denumire:	
+SSD Samsung 980 1TB PCI Express 3.0 x4 M.2 2280
+Cod producator:	
+MZ-V8V1T0BW
+Garantie comerciala:	
+60 luni
+Garantie de conformitate:	24 luni
+General
+Tip Serie	
+Consumer
+Recomandat pentru Gaming	
+Da
+Seria	
+980
+Tip SSD	
+Intern
+Form factor	
+M.2
+Triple-level Cell	
+Da
+Interfata	
+PCI Express 3.0 x4
+Suport NVMe	
+Da
+Capacitate	
+1 TB
+Controller	
+Samsung Pablo
+Viteze De Lucru
+Citire max.	
+3500 MB/s
+Scriere max.	
+3000 MB/s
+Random 4KB citire	
+500K IOPS max.
+Random 4KB scriere	
+480K IOPS max.
+Caracteristici
+Lungime M.2 slot	
+80 mm
+Rezistenta la soc	
+1500G
+MTBF	
+1.500.000 ore
+Temperatura operare	
+0 - 70 grade C
+Dimensiuni	
+80.15 x 22.15 x 2.38 mm
+Capacitate maxima de scriere / rescriere (TBW)	
+600 TB
+Tehnologii
+Suport TRIM	
+Da
+Suport S.M.A.R.T	
+Da
+Criptare date	
+AES 256-bit
